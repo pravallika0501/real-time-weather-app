@@ -102,10 +102,13 @@ weather-outfit-planner/
 ```bash
 git clone https://github.com/yourusername/weather-outfit-planner.git
 cd weather-outfit-planner
+```
+
 
 ### 2. Install Requirements
 ```bash
 pip install -r requirements.txt
+```
 
 ### 3. Get Free API Key
 Sign up at Visual Crossing Weather API ✅
@@ -114,6 +117,7 @@ Copy your API key (free tier gives 1000+ calls per day)
 ### 4. Run the App
 ```bash
 streamlit run app.py
+```
 
 ---
 
