@@ -72,27 +72,6 @@ weather-outfit-planner/
 
 ---
 
-## 📝 How to Run This App Locally
-
-### 1. Clone the Repo
-```bash
-git clone https://github.com/yourusername/weather-outfit-planner.git
-cd weather-outfit-planner
-
-### 2. Install Requirements
-```bash
-pip install -r requirements.txt
-
-### 3. Get Free API Key
-Sign up at Visual Crossing Weather API ✅
-Copy your API key (free tier gives 1000+ calls per day)
-
-### 4. Run the App
-```bash
-streamlit run app.py
-
----
-
 ## 📸 Screenshots
 
 ### 🏠 Home Page
@@ -113,6 +92,28 @@ streamlit run app.py
 ### 📈 Interactive Forecast Charts
 ![Charts](screenshots/charts.png)
 
+
+---
+
+
+## 📝 How to Run This App Locally
+
+### 1. Clone the Repo
+```bash
+git clone https://github.com/yourusername/weather-outfit-planner.git
+cd weather-outfit-planner
+
+### 2. Install Requirements
+```bash
+pip install -r requirements.txt
+
+### 3. Get Free API Key
+Sign up at Visual Crossing Weather API ✅
+Copy your API key (free tier gives 1000+ calls per day)
+
+### 4. Run the App
+```bash
+streamlit run app.py
 
 ---
 
