@@ -1,31 +1,78 @@
-# 🌦️ Weather + Outfit Planner App
+# 🌦️ Weather Forecast + Outfit Planner App
 
-A dynamic Streamlit web app that fetches **real past 1-year weather data** for your location, trains forecasting models, predicts the next 7/14/30/60/90 days, and **suggests outfits** based on the forecast (with emojis 🧥👕🩳🌧️).
+An interactive **Streamlit** web app that fetches **real-time past 1-year weather data** for your location, forecasts the next 7/14/30/60/90 days using **Prophet**, and suggests outfits (with emojis 👕🧥🩳🌧️) based on the forecast.
 
-✅ **Dynamic, Live Data** (No static old CSVs!)  
-✅ **Prophet models** forecast temperature & rainfall  
-✅ **Outfit planner** with smart suggestions  
-✅ **Interactive charts** and clean table views  
+Built with 📊 time series forecasting models, 🔥 live weather API integration, and deployed on **Streamlit Cloud**!
 
 ---
 
-## 🚀 Live Demo Flow
+## ✅ Features
 
-1. **User Inputs:**
-   - Visual Crossing API Key (free key works!)
-   - Location (e.g., `Bengaluru,India`)
-   - Days to forecast (7, 14, 30, 60, 90)
-
-2. **App Does:**
-   - Pulls **past 365 days weather** up to yesterday
-   - Trains Prophet models (temperature + rainfall)
-   - Predicts next days
-   - Suggests daily outfits (using simple logic)
-   - Displays chart + data
+- 🚀 **Live Weather Data** (from Visual Crossing API)
+- 🤖 Uses **Prophet model** for future weather forecasting
+- 👕 **Outfit suggestions** based on daily weather (smart logic + emojis)
+- 📈 **Interactive charts** + neat table views
+- 🌐 **Deployed on Streamlit Cloud** for public access
 
 ---
 
-## 📝 How to Run This App
+## 📝 Project Workflow
+
+1. **Offline Analysis (CSV based)**
+    - Used dataset: `Bengaluru 2021-01-01 to 2024-02-29.csv`
+    - Built models:
+      - `arimamodel.ipynb`
+      - `sarimamodel.ipynb`
+      - `prophetmodel.ipynb`
+    - Compared predictions from ARIMA, SARIMA, and Prophet
+    - ✅ Found **Prophet** gave best results for this weather data
+
+2. **Live Data App (API based)**
+    - Created `app.py` which:
+      - Fetches **past 365 days real data** via Visual Crossing API
+      - Trains **Prophet models** for temperature & rainfall
+      - Predicts next **7/14/30/60/90 days**
+      - Suggests outfits (e.g., 🧥 for cold, 🩳 for hot)
+      - Shows results in interactive charts + tables
+
+3. **Deployed** 🚀
+    - Built the web app using **Streamlit**
+    - Deployed publicly using **Streamlit Community Cloud**
+
+---
+
+## 🚀 Live Demo (Deployed Link)
+
+👉 [Click Here to Try the Live App]([https://your-streamlit-cloud-link](https://real-time-weather-app-chcivn69o7hvqkyqpweauy.streamlit.app/))
+
+---
+
+## 📂 Folder Structure
+
+weather-outfit-planner/
+├── Bengaluru 2021-01-01 to 2024-02-29.csv # Offline dataset used for initial experiments
+├── README.md # Project documentation
+├── app.py # Streamlit web app (live forecasting)
+├── arimamodel.ipynb # ARIMA model notebook
+├── prophetmodel.ipynb # Prophet model notebook
+├── sarimamodel.ipynb # SARIMA model notebook
+├── requirements.txt # Python dependencies
+
+
+---
+
+## 📦 Tech Stack
+
+- **Python** (Pandas, Numpy)
+- **Prophet** (Forecasting)
+- **ARIMA / SARIMA** (Comparative models)
+- **Visual Crossing API** (Weather data source)
+- **Streamlit** (Web app framework)
+- **Altair** (Interactive charts)
+
+---
+
+## 📝 How to Run This App Locally
 
 ### 1. Clone the Repo
 ```bash
@@ -42,19 +89,39 @@ Copy your API key (free tier gives 1000+ calls per day)
 ### 4. Run the App
 streamlit run app.py
 
+---
 
-## ✅ Folder Structure
+## 📸 Screenshots
 
-weather-outfit-planner/
-├── app.py              
-├── requirements.txt    
-└── README.md   
+### 🏠 Home Page
+![Home Page](screenshots/homepage.png)
+
+---
+
+### 📊 Past Real Weather Data
+![Past Real Data](screenshots/past_real_data.png)
+
+---
+
+### 🌦️ Predicted Forecast Data + Outfit Suggestions
+![Predicted Data](screenshots/predicted_data.png)
+
+---
+
+### 📈 Interactive Forecast Charts
+![Charts](screenshots/charts.png)
 
 
-## 📦 Tech Stack
+---
 
-Streamlit (Web App Framework)
-Prophet (Time Series Forecasting)
-Visual Crossing API (Weather data source)
-Altair (Charts)
+## 🚧 Future Plans
+
+🖼️ Show outfit images along with emojis
+
+📱 Make app mobile-friendly
+
+📅 Allow users to download weekly outfit plans
+
+🌐 Add more cities and multiple API providers
+
 
