@@ -48,7 +48,7 @@ Built with 📊 time series forecasting models, 🔥 live weather API integratio
 ---
 
 ## 📂 Folder Structure
-
+```bash
 weather-outfit-planner/
 ├── Bengaluru 2021-01-01 to 2024-02-29.csv   # Offline dataset used for initial experiments
 ├── README.md                                # Project documentation
@@ -57,7 +57,7 @@ weather-outfit-planner/
 ├── prophetmodel.ipynb                       # Prophet model notebook
 ├── sarimamodel.ipynb                        # SARIMA model notebook
 ├── requirements.txt                         # Python dependencies
-
+```
 
 ---
 
